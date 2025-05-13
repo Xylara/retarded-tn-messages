@@ -6,6 +6,56 @@
     <meta property="og:description" content="Best messages in Titanium network">
     <title>TN Best Messages</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+            .image {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            aspect-ratio: min(4/3, 1) max(3/2, 1);
+        }
+        
+        .image:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .image-link {
+            display: block;
+            overflow: hidden;
+        }
+        
+        .image-link:hover {
+            opacity: 0.9;
+        }
+        
+        .image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .image:hover {
+            transform: scale(1.05);
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
     <nav class="bg-white shadow-lg fixed w-full z-10">
@@ -22,39 +72,41 @@
 
     <main class="pt-20 pb-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:shadow-xl hover:scale-105">
-                    <a href="./img/1.png" target="_blank" class="block">
+            <div class="image-grid">
+                <div class="image">
+                    <a href="./img/1.png" target="_blank" class="image-link">
                         <img 
                             src="./img/1.png" 
                             alt="Its a guys hand trust" 
-                            class="w-full h-64 object-cover transition-transform hover:scale-110"
+                            class="image"
+                            loading="lazy"
                         >
                     </a>
                 </div>
 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:shadow-xl hover:scale-105">
-                    <a href="./img/2.png" target="_blank" class="block">
+                <div class="image">
+                    <a href="./img/2.png" target="_blank" class="image-link">
                         <img 
                             src="./img/2.png" 
                             alt="Pedo-fr" 
-                            class="w-full h-64 object-cover transition-transform hover:scale-110"
+                            class="image"
+                            loading="lazy"
                         >
                     </a>
                 </div>
 
-                <!-- copy and paste this part--> 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:shadow-xl hover:scale-105">
-                    <a href="./img/3.png" target="_blank" class="block">
-                    <img 
-                        src="./img/3.png" 
-                        alt="i-sorry" 
-                        class="w-full h-full object-cover class="block""
-                    >
+                <div class="image">
+                    <a href="./img/3.png" target="_blank" class="image-link">
+                        <img 
+                            src="./img/3.png" 
+                            alt="i-sorry" 
+                            class="image"
+                            loading="lazy"
+                        >
+                    </a>
                 </div>
 
-                <!-- add more images here and submit a pr--> 
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:shadow-xl hover:scale-105">
+                <div class="image">
                     <a href="./img/4.png" target="_blank" class="block">
                     <img 
                         src="./img/4.png" 
@@ -62,7 +114,7 @@
                         class="w-full h-full object-cover"
                     >
                 </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:shadow-xl hover:scale-105">
+                <div class="image">
                     <a href="./img/5.png" target="_blank" class="block">
                     <img 
                         src="./img/5.png" 
@@ -70,7 +122,7 @@
                         class="w-full h-full object-cover"
                     >
                 </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition-transform hover:shadow-xl hover:scale-105">
+                <div class="image">
                     <a href="./img/6.png" target="_blank" class="block">
                     <img 
                         src="./img/6.png" 
